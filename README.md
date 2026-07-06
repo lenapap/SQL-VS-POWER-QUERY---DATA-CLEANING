@@ -99,7 +99,7 @@ Sort by shipment_id : ascending order &  Remove Duplicates on container_id, wrap
 
 ## Conclusion
 
-Working with both tools i prefer Power Query since every step is visisble and its easier for the analyst in deleting steps or cretae new. 
+Working with both tools,I prefer Power Query : every step is visisble,making is easy to navigate through the transformation and revisit any point of the process.
 Despite Power Query being the friendlier tool, SQL wins on larger datasets, where processing inside the  databse makes the difference.
 
 

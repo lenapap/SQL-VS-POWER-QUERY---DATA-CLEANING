@@ -1,0 +1,109 @@
+shipment_id,container_id,vessel_name,origin_port,destination_port,departure_date,arrival_date,cargo_type,cargo_weight_kg,shipping_cost_usd,status,customer_name
+1,MSCU1000260, Ever Given ,valencia, New York,12-06-2024,2024-06-22,chemicals,4337.29,abc, DELIVERED ,Northern Supply
+2,OOLU1000928,cosco star, Rotterdam, LOS ANGELES,21-05-2024,2024-06-11,Chemicals ,19875.73,1248.27, delayed ,MedTrade Ltd
+3,MAEU1000632, zim neptune ,Singapore ,Limassol ,2024/02/24,29/03/2024,Food Products ,4339.83,$6561.92, Cancelled,northern supply
+4,MSCU1000761, COSCO STAR, hamburg,dubai ,08-05-2024,2024/05/22,Machinery ,8707.23 kg,5756.02,Returned,Maritime Pharma
+5,MSCU1001065, cosco star,Shanghai,jeddah,12/04/2024,08/05/2024,CHEMICALS,6679.18,3469.45,Cancelled ,Delta Textiles 
+6,COSU1001078,MSC Aurora,SINGAPORE, new york,19/02/2024,05/03/2024,PHARMACEUTICALS,5545.92 kg,4415.97,Returned , global parts
+7,MAEU1000672,Maersk Horizon,Piraeus, Istanbul,16/01/2024,2024/02/08, Machinery ,14328.39,7380.67, Delivered, EuroMachinery 
+8,ZIMU1000863, Hapag Express, hamburg, ALEXANDRIA ,2024-03-08,2024/03/19,AUTOMOTIVE PARTS ,4838.04 kg,,Pending ,Helios Energy 
+9,MSCU1000648,Cosco Star, antwerp ,Limassol,23-04-2024,2024/05/23, Machinery,,6151.75,RETURNED,MEDTRADE LTD 
+10,ZIMU1000655,Cosco Star, Antwerp,Los Angeles ,2024-01-10,12-02-2024,CHEMICALS ,,$6944.63, In Transit ,delta textiles
+11,MAEU1000603,OOCL Voyager, Singapore, NEW YORK,2024-06-20,,AUTOMOTIVE PARTS,9132.68,7344.92,Pending,BLUEWAVE IMPORTS
+12,MAEU1001179, OOCL VOYAGER,Piraeus,limassol,24-01-2024,2024-02-11,FOOD PRODUCTS,5976.07 kg,1085.63,Delayed,Northern Supply
+13,COSU1000563,cma cgm atlas ,shanghai,limassol,2024/05/20,,FURNITURE ,8126.06,6810.33,IN TRANSIT,Maritime Pharma
+14,HLCU1001124,msc aurora,singapore ,ISTANBUL ,26/02/2024,,Pharmaceuticals,19176.4,,in transit ,BlueWave Imports
+15,OOLU1000672, CMA CGM Atlas ,Hamburg,busan,2024-03-04,19-03-2024,Food Products ,13522.93,$1769.36,Delivered ,helios energy
+16,OOLU1001198, HAPAG EXPRESS, Hamburg,LIMASSOL ,2024-04-20,16/05/2024,PHARMACEUTICALS,12475.9 kg,6476.84, DELAYED,bluewave imports
+17,OOLU1001192,COSCO STAR , shanghai ,los angeles ,2024-03-02,04/04/2024, Food Products,974.19,3136.19,DELAYED ,Aegean Foods
+18,MSCU1001256,msc aurora, Rotterdam,Busan,02/02/2024,2024/03/07, Pharmaceuticals,13408.42 kg,4247.56,delivered, Global Parts 
+19,ZIMU1001513,EVER GIVEN, Hamburg ,Alexandria,20/01/2024,02/02/2024,Pharmaceuticals,16829.81 kg,$3113.57, DELIVERED ,Delta Textiles 
+20,MSCU1001221, COSCO STAR ,SINGAPORE ,Limassol,2024-02-28,2024-03-03,Food Products,21485.5,$2231.45,Delayed,delta textiles
+21,CMAU1001341, MSC Aurora, ROTTERDAM, Jeddah,07/05/2024,07-06-2024,automotive parts,4102.86,3089.02,Delivered,BLUEWAVE IMPORTS
+22,HLCU1001280,Cosco Star ,valencia ,Jeddah,09-05-2024,2024-05-29, Automotive Parts,23530.59,5307.42, DELIVERED,BlueWave Imports
+23,OOLU1001586, ZIM Neptune ,Hamburg,Dubai ,2024-04-14,26/04/2024,electronics ,7788.13,$5636.77, DELIVERED, EuroMachinery 
+24,COSU1001049, MAERSK HORIZON,Valencia , Limassol,2024-06-05,02-07-2024,pharmaceuticals,16536.82,2664.63,returned,Aegean Foods
+25,MSCU1001241,zim neptune ,HAMBURG ,Istanbul,14/03/2024,2024-03-31, Pharmaceuticals ,5728.63,2804.76, Returned,Delta Textiles
+26,COSU1001297,Ever Given, Hamburg ,NEW YORK ,11-04-2024,,FURNITURE,16575.4,abc,Pending,Oceanic Retail
+27,CMAU1001193,Maersk Horizon ,Shanghai , istanbul,06-06-2024,2024/07/05, Textiles,12729.14,2694.46,Pending ,Oceanic Retail
+28,COSU1001147,ZIM Neptune ,HAMBURG ,Jeddah ,29/01/2024,, Food Products ,933.98,2916.79,in transit,HELIOS ENERGY 
+29,HLCU1001820, MAERSK HORIZON ,Singapore , dubai,2024/05/09,2024/06/08,Chemicals,18400.21,6744.12,Delivered,Aegean Foods
+30,ZIMU1001746,MSC Aurora,piraeus , ISTANBUL ,2024/05/27,01-07-2024,Machinery ,3476.01,$7324.84,In Transit,OCEANIC RETAIL
+31,MSCU1001500,oocl voyager,hamburg,new york,2024-05-25,02-06-2024,chemicals,17490.55,6022.16,delivered ,Maritime Pharma 
+32,CMAU1001359,ZIM Neptune ,rotterdam,Limassol ,2024/01/11,10/02/2024, Food Products,24208.03,,DELIVERED, oceanic retail 
+33,COSU1001551, cosco star,Hamburg,DUBAI ,2024/06/03,2024/06/15,Food Products,21753.32,4655.29,Delayed,Northern Supply 
+34,OOLU1001706,ZIM Neptune,HAMBURG,New York ,03/06/2024,06-07-2024,PHARMACEUTICALS,12889.39,, Returned , Oceanic Retail
+35,CMAU1001313,COSCO STAR ,genoa , Alexandria,2024/06/18,,Chemicals,22862.58,5992.88, in transit, EuroMachinery
+36,MAEU1001708, ZIM NEPTUNE,Valencia, Los Angeles,2024/04/15,11-05-2024,FOOD PRODUCTS ,17291.37,$6618.17, Delayed,MedTrade Ltd
+37,ZIMU1001518,cma cgm atlas,Singapore, dubai ,16/04/2024,2024-04-22, Food Products ,unknown,3749.34,cancelled,bluewave imports
+38,COSU1001963,MSC AURORA, ANTWERP,istanbul ,2024-01-05,09-02-2024,machinery,8509.98,911.89,returned,Northern Supply 
+39,ZIMU1001491,COSCO STAR,Valencia,LOS ANGELES,2024/04/27,,furniture,26167.7,4816.92, Pending ,GLOBAL PARTS
+40,OOLU1001643,msc aurora, piraeus,ISTANBUL,2024-06-25,, CHEMICALS ,27949.14,$2986.62, PENDING , bluewave imports
+41,MSCU1002346,Cosco Star,Hamburg,Los Angeles ,23-05-2024,2024-06-02, Textiles,17326.62,6174.25,PENDING, EuroMachinery
+42,ZIMU1002543,CMA CGM ATLAS , Rotterdam ,BUSAN,2024-05-02,2024/05/31,Textiles ,9218.26,1463.65,CANCELLED,Oceanic Retail 
+43,HLCU1002501, Hapag Express , VALENCIA ,JEDDAH ,2024-06-08,2024/07/02, Chemicals,1280.27,1245.51, Returned, GLOBAL PARTS 
+44,HLCU1002145, ZIM Neptune,PIRAEUS, JEDDAH ,2024-04-08,07-05-2024,Chemicals,20331.03,2342.74, In Transit,BLUEWAVE IMPORTS
+45,MAEU1002395,Cosco Star ,SINGAPORE ,Alexandria,2024-06-08,,Automotive Parts,26321.09,abc,In Transit, Aegean Foods
+46,OOLU1001814, ever given ,SHANGHAI,New York,28/05/2024,2024/06/14, FURNITURE,5189.08,,DELAYED, Global Parts 
+47,COSU1002127,OOCL Voyager,hamburg ,Jeddah ,2024-05-22,2024-06-13,pharmaceuticals,19481.6 kg,4616.42,in transit,medtrade ltd
+48,MSCU1002443,Ever Given,SINGAPORE,New York,2024-01-26,06-02-2024,electronics ,26213.38 kg,$7575.84, Delivered,Maritime Pharma 
+49,MAEU1001992,OOCL Voyager , rotterdam ,busan,2024-05-09,10-06-2024,Pharmaceuticals ,,5826.97, PENDING,NORTHERN SUPPLY
+50,OOLU1002412,ZIM Neptune,Shanghai,Jeddah,29-06-2024,2024/07/21,machinery,26367.48,3693.33,Delayed, MARITIME PHARMA 
+51,MAEU1002479, maersk horizon , Piraeus, NEW YORK ,16/04/2024,2024/05/18,Chemicals,unknown,,Returned,maritime pharma 
+52,COSU1002312, ever given ,rotterdam, new york,2024/05/17,14-06-2024,Textiles ,unknown,926.4,returned , Maritime Pharma
+53,MAEU1002602, OOCL Voyager , Valencia, LOS ANGELES,27-05-2024,2024-06-19, Pharmaceuticals,24597.1,8391.29,returned, maritime pharma 
+54,OOLU1002685,EVER GIVEN , piraeus,Jeddah,14-06-2024,2024-06-22,Chemicals,20426.08,2347.66, CANCELLED,NORTHERN SUPPLY
+55,ZIMU1002286,ZIM Neptune ,Genoa,Los Angeles ,22-03-2024,,Electronics ,4512.87,2881.88, Pending , Oceanic Retail
+56,COSU1002493,msc aurora,hamburg, los angeles ,2024-01-03,19/01/2024,CHEMICALS,17490.47,abc,RETURNED,MEDTRADE LTD 
+57,ZIMU1002448,Maersk Horizon ,GENOA,Alexandria ,2024-06-15,20/06/2024,Electronics,unknown,1326.47,Delivered ,Oceanic Retail
+58,COSU1003123, OOCL Voyager,GENOA,limassol,2024-06-22,16-07-2024, Textiles ,19456.04,1496.05,Cancelled, HELIOS ENERGY
+59,CMAU1003067,oocl voyager, Shanghai, LOS ANGELES ,2024-04-23,,FURNITURE,unknown,4001.14,Pending, euromachinery 
+60,MAEU1002710,cosco star ,Genoa ,Alexandria ,11-04-2024,05/05/2024,Electronics,9562.4 kg,$3444.0, RETURNED, Delta Textiles 
+61,ZIMU1003248,Cosco Star, rotterdam, Los Angeles,05/03/2024,17/03/2024,Chemicals ,2534.04,8429.32,DELAYED, EuroMachinery
+62,COSU1002788,COSCO STAR, antwerp,New York,28-04-2024,2024-06-02, Machinery,8624.39 kg,7896.16,IN TRANSIT,Oceanic Retail 
+63,CMAU1002532,zim neptune,Antwerp,ISTANBUL ,2024-06-06,21/06/2024, Food Products ,19880.23,2463.96,cancelled , DELTA TEXTILES
+64,MAEU1002567,OOCL Voyager,GENOA,Dubai ,17-02-2024,22-03-2024,pharmaceuticals,13965.16,,Delayed ,BLUEWAVE IMPORTS
+65,ZIMU1002494, ZIM Neptune,Shanghai, limassol ,2024/05/18,23/05/2024,Chemicals ,27718.83,1678.36, Delayed,Maritime Pharma 
+66,HLCU1002904,Maersk Horizon ,Hamburg, JEDDAH,15/04/2024,21-04-2024,Chemicals,4521.69,3347.94,Pending, Helios Energy
+67,OOLU1002788,CMA CGM Atlas ,ANTWERP,los angeles,24/05/2024,, Food Products,947.74 kg,$7963.69, pending, aegean foods 
+68,OOLU1003209,cma cgm atlas,SINGAPORE,Los Angeles,2024/04/18,2024/04/29,Machinery,2956.6,$7025.27, Cancelled , Global Parts
+69,MAEU1003059,oocl voyager,Piraeus ,LIMASSOL,2024/06/04,2024/06/25, Electronics ,18606.15 kg,$3192.53,Delayed,Global Parts
+70,OOLU1003248,MAERSK HORIZON, shanghai, Jeddah,28-06-2024,26-07-2024, food products ,9022.44,$4785.92, DELIVERED, global parts
+71,COSU1002797,cosco star,rotterdam ,new york,2024/03/09,2024-03-19, furniture,7979.47,1385.43,DELIVERED,BlueWave Imports 
+72,OOLU1003301,EVER GIVEN,Shanghai,los angeles ,2024/05/12,2024/05/17,chemicals,24315.89,6778.81, Cancelled,MEDTRADE LTD
+73,ZIMU1003104, Maersk Horizon, singapore ,Limassol ,2024/02/06,2024/02/26,textiles ,25175.41 kg,4850.17,delivered ,BlueWave Imports 
+74,MSCU1003431,HAPAG EXPRESS ,Valencia,DUBAI ,invalid_date,,textiles,19879.38,5485.1,Pending, Global Parts
+75,OOLU1003211,CMA CGM ATLAS , Genoa,Busan,2024/02/20,2024/03/22,PHARMACEUTICALS,9617.62,1224.49, In Transit,Maritime Pharma
+76,ZIMU1003609,hapag express, Shanghai,Alexandria,01-04-2024,04/05/2024,FURNITURE,,,returned, Helios Energy
+77,COSU1003073, MSC Aurora, Shanghai , istanbul,2024/05/25,06-06-2024,Chemicals,22786.03,abc, RETURNED ,Oceanic Retail
+78,OOLU1003187, cma cgm atlas,Valencia,Los Angeles,2024/06/12,2024-07-16,automotive parts ,27140.43,6171.06, Delayed,BlueWave Imports
+79,HLCU1003427,OOCL VOYAGER, shanghai, alexandria ,26/03/2024,2024-04-26,Machinery,19562.34,3563.66,delivered,Northern Supply
+80,ZIMU1003462, cma cgm atlas , genoa ,Alexandria ,04/06/2024,, Automotive Parts,19672.91,6387.49,IN TRANSIT, OCEANIC RETAIL
+81,HLCU1003835,OOCL Voyager, SHANGHAI,New York,27-02-2024,2024/03/18,Food Products,19652.95,1634.94, returned ,AEGEAN FOODS
+82,MSCU1003839, oocl voyager,Rotterdam ,Alexandria,09/06/2024,2024-06-21, automotive parts ,20495.33,$7035.81,Returned , Helios Energy
+83,HLCU1003863,COSCO STAR,SHANGHAI,Jeddah,09-03-2024,2024-04-04,FOOD PRODUCTS ,8834.01,$3030.63,Delivered , MedTrade Ltd 
+84,CMAU1003608,zim neptune,ANTWERP ,DUBAI ,09-01-2024,2024-02-10,Textiles ,8034.38,abc, DELIVERED, AEGEAN FOODS 
+85,COSU1003249,MSC Aurora,Antwerp , DUBAI ,2024-01-03,2024-01-20,Pharmaceuticals,8072.91,7705.67,pending ,Aegean Foods
+86,OOLU1003767,EVER GIVEN,Genoa,Los Angeles ,18-06-2024,11-07-2024,Pharmaceuticals,18523.52,abc,Delayed,MEDTRADE LTD 
+87,HLCU1003274, cma cgm atlas,genoa ,DUBAI ,2024/03/25,,AUTOMOTIVE PARTS ,17945.91,5310.38,Pending,bluewave imports
+88,OOLU1003260,ever given ,ROTTERDAM , NEW YORK,2024-04-19,invalid_date,Furniture ,unknown,3735.57,Cancelled , delta textiles
+89,MSCU1003962, msc aurora,Rotterdam ,NEW YORK,24-02-2024,28-02-2024, Furniture,20055.53 kg,6920.17, returned ,MedTrade Ltd
+90,OOLU1003421,Maersk Horizon , Rotterdam,Alexandria,2024/02/21,17/03/2024,Food Products,1583.66,abc,DELAYED,bluewave imports 
+91,OOLU1004238,ZIM Neptune,rotterdam,los angeles,05/02/2024,2024-02-18,Machinery,7878.51,$6471.32,Pending,OCEANIC RETAIL
+92,COSU1003939,MAERSK HORIZON,valencia,new york,22/04/2024,2024-04-27,machinery ,839.91 kg,$7499.33, Delivered , DELTA TEXTILES
+93,MSCU1004251,Hapag Express,Genoa , Busan,2024-05-26,26/06/2024,automotive parts ,3764.44,,DELIVERED,Global Parts 
+94,ZIMU1004166,Maersk Horizon, Singapore,Limassol,12-02-2024,, Machinery,26080.95 kg,$3886.01,In Transit,DELTA TEXTILES
+95,OOLU1004269,ever given , Antwerp,Los Angeles ,2024-03-04,2024-03-24,Automotive Parts,12953.26 kg,$1913.63,Cancelled,Delta Textiles 
+96,MSCU1003919,zim neptune,Shanghai , Alexandria,2024-02-07,2024/02/13, electronics,21130.09 kg,2123.11,Delayed,Helios Energy
+97,ZIMU1003850,MSC AURORA ,Singapore,ALEXANDRIA,2024-02-19,11-03-2024,Textiles,2547.9,8214.81,cancelled, helios energy 
+98,OOLU1004532,COSCO STAR , Hamburg,Istanbul,02-04-2024,23/04/2024,Chemicals ,27481.16 kg,$966.91,In Transit ,bluewave imports 
+99,CMAU1003701, maersk horizon , Rotterdam ,LIMASSOL ,2024/06/24,24-07-2024,Electronics,19825.43 kg,8319.3,Delivered ,maritime pharma 
+100,MAEU1004005, Cosco Star, singapore,DUBAI,23/01/2024,13/02/2024, machinery,18669.89,$4502.31, cancelled,Aegean Foods
+101,MSCU1000761,COSCO STAR , hamburg, DUBAI ,08-05-2024,2024/05/22,Machinery ,8707.23 kg,5756.02, Returned,Maritime Pharma
+102,MAEU1001179, OOCL VOYAGER, Piraeus,limassol ,24-01-2024,2024-02-11,FOOD PRODUCTS,5976.07 kg,1085.63, DELAYED ,Northern Supply
+103,MSCU1001241,zim neptune, HAMBURG,Istanbul,14/03/2024,2024-03-31, Pharmaceuticals ,5728.63,2804.76,RETURNED ,Delta Textiles
+104,OOLU1001643,msc aurora,piraeus , ISTANBUL ,2024-06-25,, CHEMICALS ,27949.14,$2986.62,pending , bluewave imports
+105,ZIMU1002286,ZIM Neptune,Genoa,Los Angeles,22-03-2024,,Electronics ,4512.87,2881.88, PENDING, Oceanic Retail
+106,MSCU1234567, MSC Aurora ,piraeus ,New York,2024/01/15,20-01-2024,electronics ,1250,1500.00, delivered, Aegean Foods 
+107,MSCU1234567,msc aurora,PIRAEUS,NEW YORK ,15/01/2024,2024-01-20,ELECTRONICS,1250 kg,$1500.00,DELIVERED,aegean foods
+108,BAD123,Ever Given,Shanghai,Dubai,invalid_date,2024/04/12,Machinery,unknown,abc,Pending,Global Parts

@@ -83,13 +83,17 @@ B.	Power Query :
 Sort by shipment_id : ascending order &  Remove Duplicates on container_id, wrapped in Table.Buffer() to guarantee the sort order is respected — the sort plays the role of `ORDER BY` in deciding which row survives.
 
 
-	                             SQL                            POWER QUERY
-UI (user interface)     	Requires coding                   More friendly
-Validation	              Requires coding    	              Graphs and view sector
-Steps	                    Scroll up-down                    Appear on the right side
-Table update	            Requires coding	                  Changes appear after each step
-Locale handling	          CAST is format-foxed	            Type conversion is locale sensitive
-Access to original data  	Lost after UPDATE	                Always available
+## Key Differences
+
+| | SQL (MySQL) | Power Query |
+|---|---|---|
+| UI | Requires coding | Visual, menu-driven |
+| Validation | Queries (SELECT DISTINCT) | Quality bars & column distribution |
+| Steps | Scroll through the script | Listed in the Applied Steps panel |
+| Access to original data | Lost after UPDATE — re-import needed | One click away in the Source step |
+| Repeatability | Re-run the script manually | Refresh re-applies all steps |
+| Error visibility | Found by querying | Shown per cell/column |
+| Scale | Millions of rows, in-database | Small/medium files |
 
 ==================
 

@@ -1,0 +1,32 @@
+let
+    Source = Csv.Document(File.Contents("C:\Users\lenap\Desktop\lena's_projects\Github\SQL VS POWER QUERY\messy_shipping_data.csv"),[Delimiter=",", Columns=12, Encoding=1253, QuoteStyle=QuoteStyle.None]),
+    #"1. Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    #"1. Changed Type" = Table.TransformColumnTypes(#"1. Promoted Headers",{{"shipment_id", Int64.Type}, {"container_id", type text}, {"vessel_name", type text}, {"origin_port", type text}, {"destination_port", type text}, {"departure_date", type text}, {"arrival_date", type text}, {"cargo_type", type text}, {"cargo_weight_kg", type text}, {"shipping_cost_usd", type text}, {"status", type text}, {"customer_name", type text}}),
+    #"2.1 Trim text columns" = Table.TransformColumns(#"1. Changed Type",{{"vessel_name", Text.Trim, type text}, {"origin_port", Text.Trim, type text}, {"destination_port", Text.Trim, type text}, {"cargo_type", Text.Trim, type text}, {"status", Text.Trim, type text}, {"customer_name", Text.Trim, type text}}),
+    #"2.1 Uppercase text columns" = Table.TransformColumns(#"2.1 Trim text columns",{{"vessel_name", Text.Upper, type text}, {"origin_port", Text.Upper, type text}, {"destination_port", Text.Upper, type text}, {"cargo_type", Text.Upper, type text}, {"status", Text.Upper, type text}, {"customer_name", Text.Upper, type text}}),
+    #"2.2 Replace 'kg' to ''" = Table.ReplaceValue(#"2.1 Uppercase text columns","kg","",Replacer.ReplaceText,{"cargo_weight_kg"}),
+    #"2.2 Replace 'unknown' to ''" = Table.ReplaceValue(#"2.2 Replace 'kg' to ''","unknown","",Replacer.ReplaceText,{"cargo_weight_kg"}),
+    #"2.2 Replace '' to null" = Table.ReplaceValue(#"2.2 Replace 'unknown' to ''","","NULL",Replacer.ReplaceValue,{"cargo_weight_kg"}),
+    #"2.2 Changed Type to cargo_weight_kg" = Table.TransformColumnTypes(#"2.2 Replace '' to null",{{"cargo_weight_kg", type number}}),
+    #"2.2 Replaced $ to ''" = Table.ReplaceValue(#"2.2 Changed Type to cargo_weight_kg","$","",Replacer.ReplaceText,{"shipping_cost_usd"}),
+    #"2.2 Replace 'abc' to ''" = Table.ReplaceValue(#"2.2 Replaced $ to ''","abc","",Replacer.ReplaceText,{"shipping_cost_usd"}),
+    #"2.2 Replace '' to null _2" = Table.ReplaceValue(#"2.2 Replace 'abc' to ''","",null,Replacer.ReplaceValue,{"shipping_cost_usd"}),
+    #"2.2 Changed Type to shipping_cost_usd_with Locale" = Table.TransformColumnTypes(#"2.2 Replace '' to null _2", {{"shipping_cost_usd", type number}}, "en-US"),
+    #"2.3 Added clean_departure_date column" = Table.AddColumn(#"2.2 Changed Type to shipping_cost_usd_with Locale", "clean_departure_date", each let t = Text.Trim([departure_date]) in
+if t = null or t = "" then null
+else try Date.FromText(t, [Format="yyyy-MM-dd", Culture="en-US"]) otherwise
+     try Date.FromText(t, [Format="yyyy/MM/dd", Culture="en-US"]) otherwise
+     try Date.FromText(t, [Format="dd/MM/yyyy", Culture="en-US"]) otherwise
+     try Date.FromText(t, [Format="dd-MM-yyyy", Culture="en-US"]) otherwise null),
+    #"2.3 Added clean_arrival_date column" = Table.AddColumn(#"2.3 Added clean_departure_date column", "clean_arrival_date", each let t = Text.Trim([arrival_date]) in
+if t = null or t = "" then null
+else try Date.FromText(t, [Format="yyyy-MM-dd", Culture="en-US"]) otherwise
+     try Date.FromText(t, [Format="yyyy/MM/dd", Culture="en-US"]) otherwise
+     try Date.FromText(t, [Format="dd/MM/yyyy", Culture="en-US"]) otherwise
+     try Date.FromText(t, [Format="dd-MM-yyyy", Culture="en-US"]) otherwise null),
+    #"2.3 Change type to date" = Table.TransformColumnTypes(#"2.3 Added clean_arrival_date column",{{"clean_arrival_date", type date}, {"clean_departure_date", type date}}),
+    #"2.3 Removed Columns (old_dates)" = Table.RemoveColumns(#"2.3 Change type to date",{"departure_date", "arrival_date"}),
+    #"2.5 Sorted Rows (shipment_id)" = Table.Sort(#"2.3 Removed Columns (old_dates)",{{"shipment_id", Order.Ascending}}),
+    #"2.5 Removed Duplicates from container_id" = Table.Distinct(Table.Buffer(#"2.5 Sorted Rows (shipment_id)"), {"container_id"})
+in
+    #"2.5 Removed Duplicates from container_id"
